@@ -1,2 +1,61 @@
 @charset "utf-8";
 /* 使用PC MAC */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  padding-top: 200px;
+  width: 200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.accordion {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.accordion__open {
+  font-size: 1.5rem;
+  border: 1px #000 solid;
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  cursor: pointer;
+}
+
+.accordion__open::before {
+  content: "+";
+  position: absolute;
+  right: 10px;
+}
+
+.accordion__open.active::before {
+  content: "-";
+}
+
+.accordion__list {
+  display: none;
+}
+
+.accordion__list__item {
+  font-size: 1rem;
+  border: 1px #000 solid;
+  border-bottom: 0;
+}
+
+.accordion__list__item:last-child {
+  border-bottom: 1px #000 solid;
+}
