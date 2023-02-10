@@ -26,6 +26,7 @@ a {
 .accordion {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .accordion__open {
@@ -35,6 +36,7 @@ a {
   padding: 10px 30px 10px 10px;
   cursor: pointer;
 }
+
 
 .accordion__open::before {
   content: "+";
@@ -58,4 +60,8 @@ a {
 
 .accordion__list__item:last-child {
   border-bottom: 1px #000 solid;
+}
+
+.accordion__list__item:first-child {
+  border-top: 0;
 }
